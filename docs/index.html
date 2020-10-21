@@ -2,20 +2,67 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Description">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+  <title>Agile</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="description" content="Agile methodology">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
 </head>
 <body>
-  <div id="app"></div>
-  <script>
-    window.$docsify = {
-      name: '',
-      repo: ''
-    }
-  </script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+<div id="app"></div>
+<script>
+  window.$docsify = {
+    loadSidebar: true,
+    subMaxLevel: 2,
+    search: 'auto',
+    auto2top: true,
+    coverpage: true
+  };
+</script>
+<script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+<script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
+<script src="//unpkg.com/docsify/lib/plugins/emoji.min.js"></script>
+<script src="//unpkg.com/docsify/lib/plugins/zoom-image.min.js"></script>
 </body>
 </html>
+
+<style>
+  .cover {
+    /* The image used */
+    background-image: url("img/cover.jpg") !important;
+    /* Full height */
+    height: 100% !important;
+
+    /* Center and scale the image nicely */
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+  }
+
+  .cover-main {
+    opacity: 0.5;
+    background-color: black;
+    color: white;
+    margin: 0 !important;
+  }
+
+
+  .cover-main .anchor span {
+    color: white;
+  }
+
+  .sidebar li > p a {
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .sidebar li.active > p a {
+    color: #42b983;
+  }
+
+  .content {
+    margin-top: 10px !important;
+    padding-top: 0 !important;
+  }
+</style>
